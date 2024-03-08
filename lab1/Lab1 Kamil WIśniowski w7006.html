@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<title>Moja Strona</title>
+</head>
+<body>
+<header>
+  <h1>Programowanie <i>Lab 1</i></h1>
+  <h2>Kamil Wiśniowski <b>Lab 1</b></h2>
+  <style>
+   table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#tab1{
+    width: 100px;
+    height: 100px;
+}
+
+  </style>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Strona Główna</a></li>
+    <li><a href=#Se>Ulubione Seriale</a></li>
+    <li><a href=#ks>Ulubione Książki</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h2>O mnie</h2>
+  <p>Cześć, jestem Kamil Wiśniowski mam 19 lat jestem studentem Informatyki</p>
+</section>
+
+<section>
+  <h2>Wykształcenie</h2>
+  <table>
+    <tr>
+      <th>Rok</th>
+      <th>Instytucja</th>
+    </tr>
+    <tr>
+      <td>2023 - obecnie</td>
+      <td>WSIZ</td>
+    </tr>
+    <tr>
+      <td>2019 - 2023</td>
+      <td>Zespół Szkół Zawodowych w Przeworsku - Technik Informatyk</td>
+    </tr>
+    <tr>
+      <td>2011 - 2019</td>
+      <td>Szkoła podstawowa nr 1 w Przeworku</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Zainteresowania</h2>
+  <ul>
+    <li>Kodowanie</li>
+    <li>Czytanie</li>
+    <li>Podróże</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="se">Ulubione Seriale</h2>
+  <ol>
+    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj6yM629uSEAxXKc_EDHTbRBmcQFnoECFcQAQ&url=https%3A%2F%2Fwww.filmweb.pl%2Fserial%2FBreaking%2BBad-2008-430668&usg=AOvVaw39bnbY3liueIJAiWNSlg6n&opi=89978449">Breaking Bad</a></li>
+    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjk_bfE9uSEAxXYSfEDHbBGDLkQFnoECCcQAQ&url=https%3A%2F%2Fwww.ppe.pl%2Fgry%2FThe-Game-of-Thrones%2F4783&usg=AOvVaw0DR2-e76Ixw53T1PySx8-H&opi=89978449">Game of Thrones</a></li>
+    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwihuNPQ9uSEAxUuSfEDHWCKAeEQFnoECCwQAQ&url=https%3A%2F%2Fwww.filmweb.pl%2Fserial%2FStranger%2BThings-2016-750359&usg=AOvVaw1_Tl31M6uwl-kmAbxTrIO6&opi=89978449">Stranger Things</a></li>
+  </ol>
+</section>
+
+<section>
+  <h2 id="ks">Ulubione Książki</h2>
+  <ol>
+    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi0vYPZ9uSEAxVBQvEDHVv-BX0QFnoECCsQAQ&url=https%3A%2F%2Fwww.filmweb.pl%2Fworld%2FHarry%2BPotter-7&usg=AOvVaw1pof5bZHAt9aLsrbmD0r7H&opi=89978449">Harry Potter</a></li>
+    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi1l4Ti9uSEAxVsavEDHSt_BO0QFnoECA8QAw&url=http%3A%2F%2Fwww.andrzejsapkowski.pl%2Frecenzjasagi1.html&usg=AOvVaw1EWJuZNRZBymKh8IjsxLrQ&opi=89978449">Wiedźmin</a></li>
+    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj_i9Pr9uSEAxX5BNsEHRCrAiYQFnoECCwQAQ&url=https%3A%2F%2Fpl.wikipedia.org%2Fwiki%2FW_pustyni_i_w_puszczy&usg=AOvVaw1kX6fMA3N2cFsy4W-BWdmy&opi=89978449">W pustyni i w puszczy</a></li>
+  </ol>
+</section>
+
+<section>
+    <h2>Formularz Kontaktowy</h2>
+    <form action="" method="get">
+      <label for="name">Imię:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      
+      <label for="t">Radio</label>
+      <input type="radio" name="t" id="t"><br /><br />
+
+      <label for="w">checkbox</label>
+      <input type="checkbox" name="w" id="w"><br /><br />
+      
+      <label for="d">DATA</label>
+      <input type="date" name="d" id="d"><br /><br />
+
+      <label for="message">Wiadomość:</label><br />
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br /><br />
+      
+      <input type="submit" value="Wyślij" />
+    </form>
+  </section>
+
+
+  <table id="tab1">
+    <tr>
+        <th></th>
+        <th rowspan="2"></th>
+        <th></th>
+    </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td rowspan="2" colspan="2"></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+        <td></td>
+      </tr>
+  </table>
+<aside>
+  <h2>Zdjęcie</h2>
+  <img width="500px" src="wsiz.jpg" alt="WSIZ" />
+</aside>
+
+<footer>
+  <hr>
+  <p>© 2024 Kamil Wiśniowski</p>
+</footer>
+
+</body>
+</html>
