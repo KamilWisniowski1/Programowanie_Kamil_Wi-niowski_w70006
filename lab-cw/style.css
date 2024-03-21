@@ -1,0 +1,104 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tab1{
+      width: 100px;
+      height: 100px;
+}
+   
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+   
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+*{
+    box-sizing: border-box;
+}
+   
+header{
+    position: sticky;
+    width: 100%;
+    background-color: lightgray;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: 0 0 10px 2px #aaa;
+    padding: 20px 120px;
+    z-index: 100;
+}
+
+ul{
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+article, section{
+    display: block;
+    padding: 0 120px;
+    font-size: 20px;
+}
+
+article{
+    position: relative;
+    display: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 120px;
+}
+
+.article-element{
+    width: 50%;
+    float: left;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: aquamarine;
+}
+
+img::before {
+    content: "ds";
+    display: block;
+    border: 2px solid black;
+  }
+
+  h2::after {
+    content: " strona personalna";
+    color: blue;
+  }
+
+  .e::after{
+    content: "";
+    width: 50px;
+    background-color: green;
+    height: 5px;
+    border-radius: 10px;
+    display:block;
+  }
+
+  a:active{
+    color: red;
+  }
