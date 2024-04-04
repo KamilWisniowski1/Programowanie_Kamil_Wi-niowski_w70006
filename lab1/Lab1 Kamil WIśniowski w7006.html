@@ -16,7 +16,41 @@
     </ul>
   </nav>
 </header>
+<button id="button1" class="button" onclick="zmienkolor('button1')">Pierwszy</button>
+<button id="button2" class="button" onclick="zmienkolor('button2')">Drugi</button>
+<button id="button3" class="button" onclick="zmienkolor('button3')">Trzeci</button>
 <h3>Pole trojkata: <span id="polet"></span></h3> 
+<button class="button" onclick="pokazElement()">Ukryty element</button>
+<div id="pokazElement" style="display:none;">
+  Ukryty element
+</div>
+
+<input type="text" id="textInput" placeholder="Wpisz wartość">
+    <button class="button" onclick="dodajDoListy()">Dodaj do listy</button>
+    <ul id="list"></ul>
+
+    <input type="text" id="imie" placeholder="Imię">
+    <input type="text" id="nazwisko" placeholder="Nazwisko">
+    <button class="button" onclick="dodajDoTabeli()">Dodaj do tabeli</button>
+    <table id="tabela">
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+        </tr>
+    </table>    
+
+    <div class="container">
+      <h2>Konwerter temperatury</h2>
+      <input type="number" id="celsiusInput" placeholder="Wpisz temperature w Celciusza">
+      <button onclick="konwerterDoFahrenheit()">Convert to Fahrenheit</button>
+      <p id="fahrenheitOutput"></p>
+
+      <input type="number" id="fahrenheitInput" placeholder="Wpisz temperature w Fahrenheitach">
+      <button onclick="konwerterDoCelsius()">Convert to Celsius</button>
+      <p id="celsiusOutput"></p>
+  </div>
+
+
 <h3 id="czas"></h3> 
 <article class="article-element">
   <h2>O mnie</h2>

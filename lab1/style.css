@@ -102,3 +102,11 @@ img::before {
   a:active{
     color: red;
   }
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+}
+.active {
+    background-color: yellow;
+}
