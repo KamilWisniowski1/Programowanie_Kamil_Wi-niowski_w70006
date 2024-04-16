@@ -25,6 +25,113 @@
   Ukryty element
 </div>
 
+<h2>Liczby losowe</h2>
+<ul id="listaRandomowychLiczb">
+        <script>
+            function generujLosoweLiczby(count, min, max) {
+                const liczby = [];
+                for (let i = 0; i < count; i++) {
+                    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+                    liczby.push(randomNumber);
+                }
+                return liczby;
+            }
+
+            function wyswietlLiczbyHTML(numbers) {
+                const list = document.getElementById("listaRandomowychLiczb");
+                numbers.forEach(number => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = number;
+                    list.appendChild(listItem);
+                });
+            }
+
+            const randomNumbers = generujLosoweLiczby(10, 1, 100); 
+            wyswietlLiczbyHTML(randomNumbers);
+        </script>
+    </ul>
+    <h2>Tabliczka mnożenia</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+            <script>
+                for (let i = 1; i <= 10; i++) {
+                    document.write("<tr>");
+                    document.write("<th>" + i + "</th>");
+                    for (let j = 1; j <= 10; j++) {
+                        document.write("<td>" + (i * j) + "</td>");
+                    }
+                    document.write("</tr>");
+                }
+            </script>
+        </tbody>
+    </table>
+    <h2>Losowe dane osobowe</h2>
+    <ul>
+
+        <script>
+            const names = ["Adam", "Ewa", "Piotr", "Anna"];
+            const surnames = ["Nowak", "Kowalski", "Wiśniewski", "Dąbrowski"];
+            const minAge = 18;
+            const maxAge = 80;
+            const minPhoneNumber = 5000000;
+            const maxPhoneNumber = 8000000;
+            const numberOfRecords = 4;
+
+            for (let i = 0; i < numberOfRecords; i++) {
+                const name = names[Math.floor(Math.random() * names.length)];
+                const surname = surnames[Math.floor(Math.random() * surnames.length)];
+                const age = Math.floor(Math.random() * (maxAge - minAge + 1)) + minAge;
+                const phoneNumber = Math.floor(Math.random() * (maxPhoneNumber - minPhoneNumber + 1)) + minPhoneNumber;
+
+                document.write("<li>");
+                document.write("Imię: " + name + ", ");
+                document.write("Nazwisko: " + surname + ", ");
+                document.write("Wiek: " + age + ", ");
+                document.write("Telefon: " + phoneNumber);
+                document.write("</li>");
+            }
+        </script>
+    </ul>
+    <h2>Liczby losowe</h2>
+    <ul id="listaLosowychLiczb">
+        <script>
+            function generujLosoweLiczby(count, min, max) {
+                const liczby = [];
+                for (let i = 0; i < count; i++) {
+                    const losoweLiczby = Math.floor(Math.random() * (max - min + 1)) + min;
+                    liczby.push(losoweLiczby);
+                }
+                return liczby;
+            }
+
+            function wyswietlLiczbyHTML(liczby) {
+                const list = document.getElementById("listaLosowychLiczb");
+                liczby.forEach(liczba => {
+                    const elementListy = document.createElement("li");
+                    elementListy.textContent = liczba;
+                    list.appendChild(elementListy);
+                });
+            }
+
+            const losoweLiczby = generujLosoweLiczby(10, 1, 100); 
+            wyswietlLiczbyHTML(losoweLiczby);
+        </script>
+    </ul>
 <input type="text" id="textInput" placeholder="Wpisz wartość">
     <button class="button" onclick="dodajDoListy()">Dodaj do listy</button>
     <ul id="list"></ul>
@@ -168,6 +275,6 @@
   <hr>
   <p>© 2024 Kamil Wiśniowski</p>
 </footer>
-<script src="script.js" defer></script>
+<script src="script.js" ></script>
 </body>
 </html>
