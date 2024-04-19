@@ -173,111 +173,183 @@
 
 // Funkcja generująca tablicę 'count' losowych liczb całkowitych z zakresu od 'min' do 'max'
 // 5. Operacje na tablicy liczb
-let numbers = [3, 7, 12, 5, 8, 6, 9, 4]; // Przykładowa tablica liczb
+// let numbers = [3, 7, 12, 5, 8, 6, 9, 4]; // Przykładowa tablica liczb
 
-// a. Zsumuj wartości
-const sum = numbers.reduce((acc, curr) => acc + curr, 0);
-console.log("Suma liczb:", sum);
+// // a. Zsumuj wartości
+// const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+// console.log("Suma liczb:", sum);
 
-// b. Znajdź liczby parzyste
-const przysteLiczby = numbers.filter(num => num % 2 === 0);
-console.log("Liczby parzyste:", przysteLiczby);
+// // b. Znajdź liczby parzyste
+// const przysteLiczby = numbers.filter(num => num % 2 === 0);
+// console.log("Liczby parzyste:", przysteLiczby);
 
-// c. Pomnóż wartości razy 3
-const pomnozoneLiczby = numbers.map(num => num * 3);
-console.log("Liczby pomnożone przez 3:", pomnozoneLiczby);
+// // c. Pomnóż wartości razy 3
+// const pomnozoneLiczby = numbers.map(num => num * 3);
+// console.log("Liczby pomnożone przez 3:", pomnozoneLiczby);
 
-// d. Dodaj do tablicy swój numer albumu i znajdź jego index
-const myAlbumNumber = 70006; // Twój numer albumu
-numbers.push(myAlbumNumber);
-const index = numbers.indexOf(myAlbumNumber);
-console.log("Index numeru albumu:", index);
+// // d. Dodaj do tablicy swój numer albumu i znajdź jego index
+// const myAlbumNumber = 70006; // Twój numer albumu
+// numbers.push(myAlbumNumber);
+// const index = numbers.indexOf(myAlbumNumber);
+// console.log("Index numeru albumu:", index);
 
-// e. Oblicz średnią arytmetyczną
-const srednia = sum / numbers.length;
-console.log("Średnia arytmetyczna:", srednia);
+// // e. Oblicz średnią arytmetyczną
+// const srednia = sum / numbers.length;
+// console.log("Średnia arytmetyczna:", srednia);
 
-// f. Znajdź największą liczbę
-const maxNumber = Math.max(...numbers);
-console.log("Największa liczba:", maxNumber);
+// // f. Znajdź największą liczbę
+// const maxNumber = Math.max(...numbers);
+// console.log("Największa liczba:", maxNumber);
 
-// g. Zlicz ilość wystąpień wybranej wartości
-const iloscWyswietlen = 5; // Wybrana wartość
-const count = numbers.filter(num => num === iloscWyswietlen).length;
-console.log("Ilość wystąpień wartości", iloscWyswietlen + ":", count);
+// // g. Zlicz ilość wystąpień wybranej wartości
+// const iloscWyswietlen = 5; // Wybrana wartość
+// const count = numbers.filter(num => num === iloscWyswietlen).length;
+// console.log("Ilość wystąpień wartości", iloscWyswietlen + ":", count);
 
-// 6. Tablica z ciągiem Fibonacciego
-function ciagFibonacciego(iloscElementow) {
-    let fib = [0, 1];
-    for (let i = 2; i < iloscElementow; i++) {
-        fib[i] = fib[i - 1] + fib[i - 2];
-    }
-    return fib;
-}
+// // 6. Tablica z ciągiem Fibonacciego
+// function ciagFibonacciego(iloscElementow) {
+//     let fib = [0, 1];
+//     for (let i = 2; i < iloscElementow; i++) {
+//         fib[i] = fib[i - 1] + fib[i - 2];
+//     }
+//     return fib;
+// }
 
-const fibonacci = ciagFibonacciego(100);
-console.log("Ciąg Fibonacciego (pierwsze 100 elementów):", fibonacci);
+// const fibonacci = ciagFibonacciego(100);
+// console.log("Ciąg Fibonacciego (pierwsze 100 elementów):", fibonacci);
 
-// 7. Funkcja zwracająca sumę dwóch największych liczb z tablicy
-function sumaDwochNajwiekszychLiczb(arr) {
-    if (arr.length < 2) return "Tablica ma za mało elementów";
+// // 7. Funkcja zwracająca sumę dwóch największych liczb z tablicy
+// function sumaDwochNajwiekszychLiczb(arr) {
+//     if (arr.length < 2) return "Tablica ma za mało elementów";
     
-    arr.sort((a, b) => b - a);
-    return arr[0] + arr[1];
-}
+//     arr.sort((a, b) => b - a);
+//     return arr[0] + arr[1];
+// }
 
-const tablicaLiczb = [3, 7, 12, 5, 8, 6, 9, 4]; // Przykładowa tablica liczb
-const sumaDwochNajwiekszych = sumaDwochNajwiekszychLiczb(tablicaLiczb);
-console.log("Suma dwóch największych liczb:", sumaDwochNajwiekszychLiczb);
+// const tablicaLiczb = [3, 7, 12, 5, 8, 6, 9, 4]; // Przykładowa tablica liczb
+// const sumaDwochNajwiekszych = sumaDwochNajwiekszychLiczb(tablicaLiczb);
+// console.log("Suma dwóch największych liczb:", sumaDwochNajwiekszychLiczb);
 
-// 8. Funkcja usuwająca duplikaty z tablicy
-function usunDuplikaty(arr) {
-    return [...new Set(arr)];
-}
+// // 8. Funkcja usuwająca duplikaty z tablicy
+// function usunDuplikaty(arr) {
+//     return [...new Set(arr)];
+// }
 
-const tablicaDuplikaty = [1, 2, 2, 3, 4, 4, 5, 6, 6];
-const tablicaBezDuplikatow = usunDuplikaty(tablicaDuplikaty);
-console.log("Tablica bez duplikatów:", tablicaBezDuplikatow);
+// const tablicaDuplikaty = [1, 2, 2, 3, 4, 4, 5, 6, 6];
+// const tablicaBezDuplikatow = usunDuplikaty(tablicaDuplikaty);
+// console.log("Tablica bez duplikatów:", tablicaBezDuplikatow);
 
-// 9. Funkcja sprawdzająca czy liczba jest pierwsza
-function spawdzCzyLiczbaPierwsza(liczba) {
-    if (liczba <= 1) return false;
-    if (liczba <= 3) return true;
+// // 9. Funkcja sprawdzająca czy liczba jest pierwsza
+// function spawdzCzyLiczbaPierwsza(liczba) {
+//     if (liczba <= 1) return false;
+//     if (liczba <= 3) return true;
 
-    if (liczba % 2 === 0 || liczba % 3 === 0) return false;
+//     if (liczba % 2 === 0 || liczba % 3 === 0) return false;
 
-    let i = 5;
-    while (i * i <= liczba) {
-        if (liczba % i === 0 || liczba % (i + 2) === 0) return false;
-        i += 6;
+//     let i = 5;
+//     while (i * i <= liczba) {
+//         if (liczba % i === 0 || liczba % (i + 2) === 0) return false;
+//         i += 6;
+//     }
+//     return true;
+// }
+
+// const liczbaDoSprawdzenia = 17;
+// console.log(liczbaDoSprawdzenia + " jest liczbą pierwszą:", spawdzCzyLiczbaPierwsza(liczbaDoSprawdzenia));
+
+// // 10. Funkcja odwracająca kolejność słów w zdaniu
+// function odwrocKolejnosc(zdanie) {
+//     return zdanie.split(" ").reverse().join(" ");
+// }
+
+// const zdanie = "To jest przykładowe zdanie do odwrócenia";
+// const odwroconeZdanie = odwrocKolejnosc(zdanie);
+// console.log("Odwrócone zdanie:", odwroconeZdanie);
+
+// // 11. Funkcja generująca losowe hasło
+// function generujRandomoweHaslo(length) {
+//     const zbiorZnakow = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+//     let hasło = "";
+//     for (let i = 0; i < length; i++) {
+//         const randomIndex = Math.floor(Math.random() * zbiorZnakow.length);
+//         hasło += zbiorZnakow[randomIndex];
+//     }
+//     return hasło;
+// }
+
+// const dlugoscHasla = 8;
+// const losoweHaslo = generujRandomoweHaslo(dlugoscHasla);
+// console.log("Losowe hasło:", losoweHaslo);
+
+
+//LAB 6
+//1.Stwórz obiekt reprezentujący książkę zawierający takie dane jak tytuł, autor, rok wydania. 
+class Ksiazka {
+    constructor(tytul, autor, rokWydania) {
+        this.tytul = tytul;
+        this.autor = autor;
+        this.rokWydania = rokWydania;
     }
-    return true;
-}
 
-const liczbaDoSprawdzenia = 17;
-console.log(liczbaDoSprawdzenia + " jest liczbą pierwszą:", spawdzCzyLiczbaPierwsza(liczbaDoSprawdzenia));
-
-// 10. Funkcja odwracająca kolejność słów w zdaniu
-function odwrocKolejnosc(zdanie) {
-    return zdanie.split(" ").reverse().join(" ");
-}
-
-const zdanie = "To jest przykładowe zdanie do odwrócenia";
-const odwroconeZdanie = odwrocKolejnosc(zdanie);
-console.log("Odwrócone zdanie:", odwroconeZdanie);
-
-// 11. Funkcja generująca losowe hasło
-function generujRandomoweHaslo(length) {
-    const zbiorZnakow = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    let hasło = "";
-    for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * zbiorZnakow.length);
-        hasło += zbiorZnakow[randomIndex];
+    informacje() {
+        return `${this.tytul} - ${this.autor} (${this.rokWydania})`;
     }
-    return hasło;
 }
 
-const dlugoscHasla = 8;
-const losoweHaslo = generujRandomoweHaslo(dlugoscHasla);
-console.log("Losowe hasło:", losoweHaslo);
+let ksiazka1 = new Ksiazka("Władca Pierścieni", "J.R.R. Tolkien", 1954);
+console.log(ksiazka1.informacje());
+
+// 2. Stwórz obiekt reprezentujący studenta zawierający informacje o jego imieniu, nazwisku, numerze albumu oraz ocenach z trzech przedmiotów.
+class Student {
+    constructor(imie, nazwisko, numerAlbumu, oceny) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.numerAlbumu = numerAlbumu;
+        this.oceny = oceny;
+    }
+
+    obliczSrednia() {
+        let suma = this.oceny.reduce((a, b) => a + b, 0);
+        let srednia = suma / this.oceny.length;
+        console.log(`Średnia ocen studenta ${this.imie} ${this.nazwisko}: ${srednia}`);
+        return srednia;
+    }
+}
+
+let student1 = new Student("Jan", "Kowalski", "123456", [4.5, 5, 3]);
+student1.obliczSrednia();
+
+// 3. Stwórz klasę Trójkąt, posiadającą atrybuty: wysokość, długość podstawy i nazwa.
+class Trojkat {
+    constructor(wysokosc, dlugoscPodstawy, nazwa) {
+        this.wysokosc = wysokosc;
+        this.dlugoscPodstawy = dlugoscPodstawy;
+        this.nazwa = nazwa;
+    }
+
+    obliczPole() {
+        return 0.5 * this.dlugoscPodstawy * this.wysokosc;
+    }
+
+    static wiekszePole(trojkat1, trojkat2) {
+        const pole1 = trojkat1.obliczPole();
+        const pole2 = trojkat2.obliczPole();
+
+        if (pole1 > pole2) {
+            return trojkat1;
+        } else if (pole2 > pole1) {
+            return trojkat2;
+        } else {
+            return "Pola są równe";
+        }
+    }
+}
+
+let trojkat1 = new Trojkat(4, 6, "Trójkąt 1");
+let trojkat2 = new Trojkat(5, 8, "Trójkąt 2");
+let trojkat3 = new Trojkat(3, 7, "Trójkąt 3");
+
+console.log(trojkat1.obliczPole());
+
+console.log(Trojkat.wiekszePole(trojkat1, trojkat2));
 
