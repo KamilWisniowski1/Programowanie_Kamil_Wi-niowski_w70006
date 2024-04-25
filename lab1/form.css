@@ -1,0 +1,21 @@
+*{
+    font-family: 'Roboto';
+}
+form{
+    display: inline;
+}
+
+div{
+
+    padding: 10px;
+    height: auto;
+}
+
+input{
+    border-radius: 18px;
+    border: 1px solid lightblue;
+    padding: 5px;
+    max-width: 150px;
+}
+
+

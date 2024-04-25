@@ -284,72 +284,72 @@
 
 //LAB 6
 //1.Stwórz obiekt reprezentujący książkę zawierający takie dane jak tytuł, autor, rok wydania. 
-class Ksiazka {
-    constructor(tytul, autor, rokWydania) {
-        this.tytul = tytul;
-        this.autor = autor;
-        this.rokWydania = rokWydania;
-    }
+// class Ksiazka {
+//     constructor(tytul, autor, rokWydania) {
+//         this.tytul = tytul;
+//         this.autor = autor;
+//         this.rokWydania = rokWydania;
+//     }
 
-    informacje() {
-        return `${this.tytul} - ${this.autor} (${this.rokWydania})`;
-    }
-}
+//     informacje() {
+//         return `${this.tytul} - ${this.autor} (${this.rokWydania})`;
+//     }
+// }
 
-let ksiazka1 = new Ksiazka("Władca Pierścieni", "J.R.R. Tolkien", 1954);
-console.log(ksiazka1.informacje());
+// let ksiazka1 = new Ksiazka("Władca Pierścieni", "J.R.R. Tolkien", 1954);
+// console.log(ksiazka1.informacje());
 
-// 2. Stwórz obiekt reprezentujący studenta zawierający informacje o jego imieniu, nazwisku, numerze albumu oraz ocenach z trzech przedmiotów.
-class Student {
-    constructor(imie, nazwisko, numerAlbumu, oceny) {
-        this.imie = imie;
-        this.nazwisko = nazwisko;
-        this.numerAlbumu = numerAlbumu;
-        this.oceny = oceny;
-    }
+// // 2. Stwórz obiekt reprezentujący studenta zawierający informacje o jego imieniu, nazwisku, numerze albumu oraz ocenach z trzech przedmiotów.
+// class Student {
+//     constructor(imie, nazwisko, numerAlbumu, oceny) {
+//         this.imie = imie;
+//         this.nazwisko = nazwisko;
+//         this.numerAlbumu = numerAlbumu;
+//         this.oceny = oceny;
+//     }
 
-    obliczSrednia() {
-        let suma = this.oceny.reduce((a, b) => a + b, 0);
-        let srednia = suma / this.oceny.length;
-        console.log(`Średnia ocen studenta ${this.imie} ${this.nazwisko}: ${srednia}`);
-        return srednia;
-    }
-}
+//     obliczSrednia() {
+//         let suma = this.oceny.reduce((a, b) => a + b, 0);
+//         let srednia = suma / this.oceny.length;
+//         console.log(`Średnia ocen studenta ${this.imie} ${this.nazwisko}: ${srednia}`);
+//         return srednia;
+//     }
+// }
 
-let student1 = new Student("Jan", "Kowalski", "123456", [4.5, 5, 3]);
-student1.obliczSrednia();
+// let student1 = new Student("Jan", "Kowalski", "123456", [4.5, 5, 3]);
+// student1.obliczSrednia();
 
-// 3. Stwórz klasę Trójkąt, posiadającą atrybuty: wysokość, długość podstawy i nazwa.
-class Trojkat {
-    constructor(wysokosc, dlugoscPodstawy, nazwa) {
-        this.wysokosc = wysokosc;
-        this.dlugoscPodstawy = dlugoscPodstawy;
-        this.nazwa = nazwa;
-    }
+// // 3. Stwórz klasę Trójkąt, posiadającą atrybuty: wysokość, długość podstawy i nazwa.
+// class Trojkat {
+//     constructor(wysokosc, dlugoscPodstawy, nazwa) {
+//         this.wysokosc = wysokosc;
+//         this.dlugoscPodstawy = dlugoscPodstawy;
+//         this.nazwa = nazwa;
+//     }
 
-    obliczPole() {
-        return 0.5 * this.dlugoscPodstawy * this.wysokosc;
-    }
+//     obliczPole() {
+//         return 0.5 * this.dlugoscPodstawy * this.wysokosc;
+//     }
 
-    static wiekszePole(trojkat1, trojkat2) {
-        const pole1 = trojkat1.obliczPole();
-        const pole2 = trojkat2.obliczPole();
+//     static wiekszePole(trojkat1, trojkat2) {
+//         const pole1 = trojkat1.obliczPole();
+//         const pole2 = trojkat2.obliczPole();
 
-        if (pole1 > pole2) {
-            return trojkat1;
-        } else if (pole2 > pole1) {
-            return trojkat2;
-        } else {
-            return "Pola są równe";
-        }
-    }
-}
+//         if (pole1 > pole2) {
+//             return trojkat1;
+//         } else if (pole2 > pole1) {
+//             return trojkat2;
+//         } else {
+//             return "Pola są równe";
+//         }
+//     }
+// }
 
-let trojkat1 = new Trojkat(4, 6, "Trójkąt 1");
-let trojkat2 = new Trojkat(5, 8, "Trójkąt 2");
-let trojkat3 = new Trojkat(3, 7, "Trójkąt 3");
+// let trojkat1 = new Trojkat(4, 6, "Trójkąt 1");
+// let trojkat2 = new Trojkat(5, 8, "Trójkąt 2");
+// let trojkat3 = new Trojkat(3, 7, "Trójkąt 3");
 
-console.log(trojkat1.obliczPole());
+// console.log(trojkat1.obliczPole());
 
-console.log(Trojkat.wiekszePole(trojkat1, trojkat2));
+// console.log(Trojkat.wiekszePole(trojkat1, trojkat2));
 

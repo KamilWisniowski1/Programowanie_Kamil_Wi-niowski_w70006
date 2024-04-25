@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Imię</label> <br>
+            <input name="fname" id="fname" type="text">
+        </div>
+        <div>
+            <label for="fsurname">Nazwisko</label><br>
+            <input name="fsurname" id="fsurname" type="text">
+        </div>
+        <div>
+            <label for="femail">Email</label><br>
+            <input name="femail" id="femail" type="email">
+        </div>
+        <div>
+            <label for="fpassword">Hasło</label><br>
+            <input name="fpassword" id="fpassword" type="password" minlength="8" required >
+        </div>
+        <div>
+            <label for="fsex">Płec</label><br>
+            
+            <input type="radio" name="fsex" id="fmale">
+            <label for="fmale">Mezczyzna</label>
+
+            <input type="radio" name="fsex" id="ffmale">
+            <label for="ffmale">Kobieta</label>
+
+            <input type="radio" name="fsex" id="fother">
+            <label for="fother">Inna</label>
+
+        </div>
+        <div>
+            <label for="fphone">Telefon</label><br>
+            <input type="fphone" name="fphone" type="tel">
+        </div>
+        <div>
+            <label for="fbirth">Data urodzenia</label><br>
+            <input type="fbirth" name="fbirth" id="fbirth" type="date">
+        </div>
+        <div>
+            <label for="fcountry">Kraj</label><br>
+            <input type="fcountry" name="fcountry" id="fcountry" type="text">
+        </div>
+
+        <input type="button" value="Wyślij" onclick="checkPassword(imieInput)">
+    </form>
+    <script src="fomr.js"></script>
+</body>
+</html>
